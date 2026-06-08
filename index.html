@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="A responsive catalogue of online courses with search and category filters."
+    >
+    <title>Our online courses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body>
+    <main class="courses">
+      <span class="courses__decoration courses__decoration--dots" aria-hidden="true"></span>
+      <span class="courses__decoration courses__decoration--arrows" aria-hidden="true"></span>
+      <span class="courses__decoration courses__decoration--steps" aria-hidden="true"></span>
+
+      <div class="courses__container">
+        <header class="courses__header">
+          <p class="courses__eyebrow">Enjoy your studying!</p>
+          <h1 class="courses__title">Our online courses</h1>
+        </header>
+
+        <div class="courses__toolbar">
+          <div class="courses__filters" role="group" aria-label="Filter courses by category"></div>
+
+          <label class="search">
+            <span class="search__label">Search courses</span>
+            <input
+              class="search__input"
+              type="search"
+              name="search"
+              placeholder="Search course..."
+              autocomplete="off"
+            >
+            <img class="search__icon" src="./images/Vector (Stroke).svg" alt="">
+          </label>
+        </div>
+
+        <section class="catalog" aria-label="Course catalogue" aria-live="polite">
+          <div class="catalog__grid"></div>
+          <p class="catalog__empty" hidden>No courses found. Try another search.</p>
+        </section>
+
+        <button class="courses__load-more" type="button">
+          <img class="courses__load-icon" src="./images/Vector.svg" alt="">
+          <span>Load more</span>
+        </button>
+      </div>
+    </main>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
