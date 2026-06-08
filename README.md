@@ -28,7 +28,7 @@ npm run watch
 npm run build
 ```
 
-Команда скомпилирует `styles/style.scss` в `styles/style.css`.
+Команда соберёт готовую для публикации версию проекта в папке `dist`.
 
 ## Структура проекта
 

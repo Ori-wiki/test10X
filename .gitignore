@@ -1,4 +1,5 @@
 node_modules/
+dist/
 .edge-*/
 *-check.png
 page.png

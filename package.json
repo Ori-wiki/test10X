@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "sass styles/style.scss styles/style.css --style=expanded --no-source-map",
+    "build": "sass styles/style.scss dist/styles/style.css --style=compressed --no-source-map && node scripts/build.js",
     "watch": "sass --watch styles/style.scss styles/style.css"
   },
   "devDependencies": {
